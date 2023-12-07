@@ -16,9 +16,6 @@ Version 0.9.6
 
 ## Was nicht funtioniert
 
-- Lautstärke regulieren
-- sauber herunterfahren (Mainboard sagt bei jedem boot das nicht orgendtlich heruntergefahren wurde)
-
   
 ## Probleme
 
