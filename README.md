@@ -22,6 +22,6 @@ Version 0.9.6
   
 ## Probleme
 
-- WLAN wird angezeigt obwohl kein WLAN verbaus ist
+- WLAN wird angezeigt obwohl kein WLAN verbaut ist
 
 
