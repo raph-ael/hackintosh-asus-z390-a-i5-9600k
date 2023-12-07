@@ -10,12 +10,12 @@ Version 0.9.6
 
 - Grafik
 - USB Rückseite
+- USB Front
 - Sound
 - LAN
 
 ## Was nicht funtioniert
 
-- Front USB
 - Lautstärke regulieren
 - sauber herunterfahren (Mainboard sagt bei jedem boot das nicht orgendtlich heruntergefahren wurde)
 
