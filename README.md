@@ -2,6 +2,10 @@
 
 Hackintosh auf Basis von ASus Prime Z390-A Mainboard und i5-9600k CPU mit interner Inter HD 630 Grafik
 
+## OpenCore
+
+Version 0.9.6
+
 ## Was funktioniert
 
 - Grafik
