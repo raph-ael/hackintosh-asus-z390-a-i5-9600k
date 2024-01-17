@@ -236,6 +236,8 @@
                 <true/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -266,213 +268,165 @@
         <dict>
             <key>Add</key>
             <dict>
-			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>8th Gen Core Processor Host Bridge/DRAM Registers</string>
-				<key>name</key>
-				<string>DRAM</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>USB controller</string>
-				<key>model</key>
-				<string>Z390 PCH USB 3.1 xHCI Host Controller</string>
-				<key>name</key>
-				<data>
-				AAw=
-				</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>RAM memory</string>
-				<key>model</key>
-				<string>Z390 PCH Shared SRAM</string>
-				<key>name</key>
-				<string>SRAM</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Communication controller</string>
-				<key>model</key>
-				<string>Z390 PCH HECI Controller</string>
-				<key>name</key>
-				<string>HECI</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>SATA controller</string>
-				<key>model</key>
-				<string>Z390 PCH SATA AHCI Controller</string>
-				<key>name</key>
-				<string>SATA</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>ISA bridge</string>
-				<key>model</key>
-				<string>Z390 Chipset LPC/eSPI Controller</string>
-				<key>name</key>
-				<string>SPI</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>alc-layout-id</key>
-				<data>
-				BwAAAA==
-				</data>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>layout-id</key>
-				<data>
-				BwAAAA==
-				</data>
-				<key>model</key>
-				<string>Realtek ALC1220 Audio Controller</string>
-				<key>name</key>
-				<string>Audio Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>SMBus</string>
-				<key>model</key>
-				<string>Cannon Lake PCH SMBus Controller</string>
-				<key>name</key>
-				<string>SMBUS</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Ethernet Controller</string>
-				<key>model</key>
-				<string>Ethernet Connection (7) I219-V</string>
-				<key>name</key>
-				<string>GLAN</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>
-				BwCbPg==
-				</data>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device-id</key>
-				<data>
-				mz4AAA==
-				</data>
-				<key>device_type</key>
-				<string>Display Controller</string>
-				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>force-online</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-busid</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-flags</key>
-				<data>
-				xwMAAA==
-				</data>
-				<key>framebuffer-con0-index</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con0-pipe</key>
-				<data>
-				CQAAAA==
-				</data>
-				<key>framebuffer-con0-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>framebuffer-con1-busid</key>
-				<data>
-				AgAAAA==
-				</data>
-				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con1-flags</key>
-				<data>
-				xwMAAA==
-				</data>
-				<key>framebuffer-con1-index</key>
-				<data>
-				AgAAAA==
-				</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>
-				CgAAAA==
-				</data>
-				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>framebuffer-con2-busid</key>
-				<data>
-				BAAAAA==
-				</data>
-				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con2-index</key>
-				<data>
-				AwAAAA==
-				</data>
-				<key>framebuffer-con2-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>model</key>
-				<string>Intel UHD Graphics 630</string>
-				<key>name</key>
-				<string>display</string>
-			</dict>
-		</dict>
+                <key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>Host bridge</string>
+                    <key>model</key>
+                    <string>8th Gen Core Processor Host Bridge/DRAM Registers</string>
+                    <key>name</key>
+                    <string>DRAM</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>USB controller</string>
+                    <key>model</key>
+                    <string>Z390 PCH USB 3.1 xHCI Host Controller</string>
+                    <key>name</key>
+                    <data>AAw=</data>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x2)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>RAM memory</string>
+                    <key>model</key>
+                    <string>Z390 PCH Shared SRAM</string>
+                    <key>name</key>
+                    <string>SRAM</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>Communication controller</string>
+                    <key>model</key>
+                    <string>Z390 PCH HECI Controller</string>
+                    <key>name</key>
+                    <string>HECI</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>SATA controller</string>
+                    <key>model</key>
+                    <string>Z390 PCH SATA AHCI Controller</string>
+                    <key>name</key>
+                    <string>SATA</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>ISA bridge</string>
+                    <key>model</key>
+                    <string>Z390 Chipset LPC/eSPI Controller</string>
+                    <key>name</key>
+                    <string>SPI</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>alc-layout-id</key>
+                    <data>BwAAAA==</data>
+                    <key>device_type</key>
+                    <string>Audio device</string>
+                    <key>layout-id</key>
+                    <data>BwAAAA==</data>
+                    <key>model</key>
+                    <string>Realtek ALC1220 Audio Controller</string>
+                    <key>name</key>
+                    <string>Audio Controller</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>SMBus</string>
+                    <key>model</key>
+                    <string>Cannon Lake PCH SMBus Controller</string>
+                    <key>name</key>
+                    <string>SMBUS</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device_type</key>
+                    <string>Ethernet Controller</string>
+                    <key>model</key>
+                    <string>Ethernet Connection (7) I219-V</string>
+                    <key>name</key>
+                    <string>GLAN</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+                <dict>
+                    <key>AAPL,ig-platform-id</key>
+                    <data>BwCbPg==</data>
+                    <key>AAPL,slot-name</key>
+                    <string>Built In</string>
+                    <key>device-id</key>
+                    <data>mz4AAA==</data>
+                    <key>device_type</key>
+                    <string>Display Controller</string>
+                    <key>enable-hdmi20</key>
+                    <data>AQAAAA==</data>
+                    <key>force-online</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-busid</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-flags</key>
+                    <data>xwMAAA==</data>
+                    <key>framebuffer-con0-index</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-pipe</key>
+                    <data>CQAAAA==</data>
+                    <key>framebuffer-con0-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-con1-busid</key>
+                    <data>AgAAAA==</data>
+                    <key>framebuffer-con1-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-flags</key>
+                    <data>xwMAAA==</data>
+                    <key>framebuffer-con1-index</key>
+                    <data>AgAAAA==</data>
+                    <key>framebuffer-con1-pipe</key>
+                    <data>CgAAAA==</data>
+                    <key>framebuffer-con1-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-con2-busid</key>
+                    <data>BAAAAA==</data>
+                    <key>framebuffer-con2-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-index</key>
+                    <data>AwAAAA==</data>
+                    <key>framebuffer-con2-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
+                    <key>model</key>
+                    <string>Intel UHD Graphics 630</string>
+                    <key>name</key>
+                    <string>display</string>
+                </dict>
+            </dict>
             <key>Delete</key>
             <dict/>
         </dict>
@@ -576,7 +530,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.5 | Audio patches</string>
+                    <string>V1.8.8 | Audio patches</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -607,23 +561,23 @@
                     <string>Contents/Info.plist</string>
                 </dict>
                 <dict>
-		  <key>Arch</key>
-		  <string>x86_64</string>
-		  <key>BundlePath</key>
-		  <string>USBInjectAll.kext</string>
-		  <key>Comment</key>
-		  <string></string>
-		  <key>Enabled</key>
-		  <true/>
-		  <key>ExecutablePath</key>
-		  <string>Contents/MacOS/USBInjectAll</string>
-		  <key>MaxKernel</key>
-		  <string></string>
-		  <key>MinKernel</key>
-		  <string></string>
-		  <key>PlistPath</key>
-		  <string>Contents/Info.plist</string>
-		</dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>USBInjectAll.kext</string>
+                    <key>Comment</key>
+                    <string>V0.8.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/USBInjectAll</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array>
@@ -1255,7 +1209,7 @@
                 <key>SystemSerialNumber</key>
                 <string>XXX</string>
                 <key>SystemUUID</key>
-                <string>XXX</string>
+                <string>9EAA60BB-4053-4ED6-AD0F-0A35EB4B6441</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1403,6 +1357,30 @@
                     <key>Path</key>
                     <string>CrScreenshotDxe.efi</string>
                 </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ext4_x64.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>OpenLinuxBoot.efi</string>
+                </dict>
             </array>
             <key>Input</key>
             <dict>
@@ -1442,7 +1420,7 @@
                 <key>IgnoreTextInGraphics</key>
                 <false/>
                 <key>InitialMode</key>
-                <string></string>
+                <string>Auto</string>
                 <key>ProvideConsoleGop</key>
                 <true/>
                 <key>ReconnectGraphicsOnConnect</key>
