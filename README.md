@@ -1,10 +1,10 @@
 # hackintosh-asus-z390-a-i5-9600k
 
-Hackintosh auf Basis von ASus Prime Z390-A Mainboard und i5-9600k CPU mit interner Inter HD 630 Grafik
+Hackintosh auf Basis von Asus Prime Z390-A Mainboard und i5-9600k CPU mit interner Inter HD 630 Grafik
 
 ## OpenCore
 
-Version 0.9.6
+Version 0.9.7
 
 ## Was funktioniert
 
